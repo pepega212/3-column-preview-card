@@ -55,7 +55,7 @@ p {
     line-height: 1.5rem;
 }
 
-#btn {
+.btn {
     background-color: hsl(0, 0%, 95%);
     border-radius: 50px;
     border: none;
@@ -67,31 +67,31 @@ p {
     transition: background-color .3s;
 }
 
-.btn1 {
+#btn1 {
     color: hsl(31, 77%, 52%);
 }
 
-.btn2 {
+#btn2 {
     color: hsl(184, 100%, 22%);
 }
 
-.btn3 {
+#btn3 {
     color: hsl(179, 100%, 13%);
 }
 
-.btn1:hover {
+#btn1:hover {
     background-color: hsl(31, 77%, 52%);
 }
 
-.btn2:hover {
+#btn2:hover {
     background-color: hsl(184, 100%, 22%);
 }
 
-.btn3:hover {
+#btn3:hover {
     background-color: hsl(179, 100%, 13%);
 }
 
-#btn:hover {
+.btn:hover {
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
     background-color: hsla(0, 0%, 95%, 0);
