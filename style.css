@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 60rem;
+}
+
+.container1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3rem;
+    border-radius: 7px 0 0 7px;
+}
+
+.container2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem;
+}
+
+.container3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3rem;
+    border-radius: 0 7px 7px 0;
+}
+
+h1 {
+    margin: 1.5rem 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 5rem;
+    padding-right: 1rem;
+    line-height: 1.5rem;
+}
+
+#btn {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    width: 9rem;
+    height: 3rem;
+    text-align: center;
+    transition: background-color .3s;
+}
+
+.btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn1:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#btn:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsla(0, 0%, 95%, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    main {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+        width: 35rem;
+        top: 90%;
+        padding-bottom: 3.5rem;
+    }
+    .container1 {
+        border-radius: 7px 7px 0 0;
+    }
+    
+    .container3 {
+        border-radius:  0 0 7px 7px;
+    }
+}
+
+@media (max-width: 568px) {
+    main {
+        width: 18.5rem;
+        top: 100%;
+    }
+}
